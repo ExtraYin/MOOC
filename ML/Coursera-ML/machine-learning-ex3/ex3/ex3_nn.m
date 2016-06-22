@@ -40,10 +40,10 @@ m = size(X, 1);
 sel = randperm(size(X, 1));
 sel = sel(1:100);
 
-displayData(X(sel, :));
+%displayData(X(sel, :));
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
+%fprintf('Program paused. Press enter to continue.\n');
+%pause;
 
 %% ================ Part 2: Loading Pameters ================
 % In this part of the exercise, we load some pre-initialized 
@@ -71,18 +71,18 @@ pause;
 %  through the examples one at the a time to see what it is predicting.
 
 %  Randomly permute examples
-rp = randperm(m);
-
-for i = 1:m
-    % Display 
-    fprintf('\nDisplaying Example Image\n');
-    displayData(X(rp(i), :));
-
-    pred = predict(Theta1, Theta2, X(rp(i),:));
-    fprintf('\nNeural Network Prediction: %d (digit %d)\n', pred, mod(pred, 10));
-    
-    % Pause
-    fprintf('Program paused. Press enter to continue.\n');
-    pause;
-end
+% rp = randperm(m);
+% 
+% for i = 1:m
+%     % Display 
+%     fprintf('\nDisplaying Example Image\n');
+%     displayData(X(rp(i), :));
+% 
+%     pred = predict(Theta1, Theta2, X(rp(i),:));
+%     fprintf('\nNeural Network Prediction: %d (digit %d)\n', pred, mod(pred, 10));
+%     
+%     % Pause
+%     fprintf('Program paused. Press enter to continue.\n');
+%     pause;
+% end
 
